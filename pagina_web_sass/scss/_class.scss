@@ -1,0 +1,28 @@
+@for $i from 1 through 5{
+    .p-#{$i}{margin: 2rem * $i;} 
+}
+
+
+// Profe ahi esta el each y el map para el desafio
+// no lo implemente en el codigo xq yo lo tengo con la 
+// propiedad hoover y se me rompe todo :(
+    
+@each $borde in green,blue,orange,yellow {
+    .borde-#{$borde} {
+        border: #{$borde} 2px solid;
+    }
+    
+}
+
+$cajaSombreada:(
+    python: #88ff9a,
+    css: #a899fc,
+    html: #7e4b08,
+    js: #72712c
+);
+
+@each $lenguaje, $color in $cajaSombreada{
+    .sombreado-#{$lenguaje}{
+        box-shadow: 12px 4px 30px 2px $color;
+    }
+}

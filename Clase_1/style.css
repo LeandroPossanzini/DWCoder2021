@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* le saco los puntos a la lista */
+li {
+    color: black;
+    list-style-type: none;
+    text-transform: capitalize;
+    list-style-position:unset;
+}
+p {
+    color: cornflowerblue;
+}
+/* le agrego primero la fuente de google, asi despues en cada etiqueta le veo el tamaño o lo que quiera transformar */
+h1, h2, h3 {
+    font-family: 'Source Code Pro', monospace;
+}
+h1{
+    color: rgb(44, 15, 15);
+    font-size: 40px;
+    text-transform: capitalize;
+}
+h2{
+    color: blue;
+}
+h3{
+    color: rgb(42, 80, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+div{
+    background-image: url('./imagenes/imagen-saludar.jpg');
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: contain;
+    height: 450px;
+    text-align: center;
+}
+/* barra */
+header {
+    height: 85px;
+}
+
+
+/* clases */
+.footer{
+    color: black;
+    font-size: 10px;
+}
+.tabla-html {
+    color: rgb(245, 114, 8);
+}
+.tabla-js {
+    color: rgb(235, 235, 11);
+}
+.tabla-css {
+    color: rgb(22, 22, 214);
+}
+.titulos-paginas {
+    text-align: center;
+    color: rgba(43, 33, 33, 0.411);
+}
+/* mala practica pero es para que me queden medianamente igual las imagenes :/ */
+img{
+    width: 200px;
+}
+/* paleta de colores de mi backgroud */
+.paleta1 {
+    background-color: #716F81;
+}
+.paleta2 {
+    background-color: #B97A95;
+}
+.paleta3 {
+    background-color: #F6AE99;
+}
+/* barra de navegacion */
+.boton {
+    background-color: #8382883f;
+    border: solid 2px white;
+    border-radius: 55px;
+    padding: 25px;
+}
+
+ul li a:hover {
+    background-color: black;
+    color: white;
+    padding: 4px;
+}
+ul li:hover {
+    background-color: black;
+}
+
+/* Asigando display flex a mi Nav! */
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul section li {
+  display: flex;
+  width: 100%;
+  
+}
+ul section{
+    display: flex;
+    justify-content: center;
+}
+.boton-inicio {
+    background-color: rgba(0, 0, 139, 0.096);
+    width: 30%;
+}
+.botones-barra {
+    background-color: rgba(139, 0, 0, 0.308);
+    width: 100%;
+}
+
+/* asignando flex a mis imagenes en herramientas */
+.imagenes-herramientas {
+    display: flex;
+    border: solid black 2px;
+    padding: 3rem;
+    background-color: rgb(211, 63, 63);
+    margin: 2rem;
+}
+
+.seccion-herramientas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenido-imagen { 
+    padding: 1rem;
+}
+
+/* asignando GRID a mis Herramientas */
+.container-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    
+}
+.img-item-html{
+    margin: 25px;
+    border: rgb(243, 41, 6) 5px solid;
+}
+.img-item-js {
+    margin: 25px;
+    border: yellow 5px solid;
+}
+.img-item-css {
+    margin: 25px;
+    border: blue 5px solid;
+}
+
+/* medias query para mi index */
+
+@media (max-width: 1000px){
+    .paleta1{
+        background-color: #705b5b;
+    }
+}
+
+@media (max-width: 756px){
+    header {
+       height: 250px;
+    }
+    ul{
+        flex-wrap: wrap; 
+    }
+    .nombre-index {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .nombre-index {
+        font-size: 15px;
+    }
+}
+

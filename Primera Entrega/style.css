@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* aplicando estilos por etiqueta */
+h1, h2, h3 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center; 
+}
+iframe {
+    margin-left: 200px;
+}
+/* mala practica con las imagenes, se vera mas adelante como acomdarlas */
+img {
+    width: 200px;
+    height: 200px;
+}
+/* para que se separe el incio de los demas botones */
+ul{
+    display: flex;
+}
+ul section li {
+  display: flex;
+  width: 100%;
+  
+}
+ul section{
+    display: flex;
+    justify-content: center;
+}
+.boton-inicio {
+    background-color: rgba(0, 0, 139, 0.096);
+    width: 30%;
+}
+.botones-barra {
+    background-color: rgba(139, 0, 0, 0.308);
+    width: 100%;
+}

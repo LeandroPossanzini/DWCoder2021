@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+h5{
+    font-family: 'Palette Mosaic', cursive;
+}
+h3,li,p,a {
+    color: white;
+    font-size: 1.5rem;
+}
+a, li {
+    list-style-type: none;
+    text-decoration: none;
+}
+.icono {
+    border: 2px solid #c28a1a;
+}
+
+/* Barra */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icono-nombre {
+    display: flex;
+    align-items: center;
+}
+.navbar-enlaces {
+    display: flex;
+}
+.navbar-enlaces li {
+    padding: 15px;
+}
+.nombre-h3{
+    padding:15px;
+}
+h1{
+    color: #c28a1a;
+}
+.seccion-texto-principal {
+    margin-top: 2rem;
+}
+.texto-movimiento{
+    display: flex;
+    font-size: 15rem;
+    margin-left: 10rem;
+    flex-wrap: wrap;
+    color: white;
+
+}
+ .espacio-texto-principal{
+    color: black;
+} 
+
+@media (max-width:899px) {
+   
+    .texto-movimiento{
+        margin-left: 5rem;
+        font-size: 5rem;
+    }
+    .social-bar{
+        position: fixed;
+        bottom: 0;
+        right:35%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        z-index: 100;
+    }
+    .icon {
+        color: white;
+        text-decoration: none;
+        padding: .7rem;
+        display: flex;
+        transition: all .5s;
+    }
+    .icon-facebook{
+        background: #2e406e;
+    }
+    .icon-instagram{
+        background: #d84910;
+    }
+    .icon-whatsapp{
+        background: green;
+    }
+    .icon-twitter{
+        background: #339dc5;
+    }
+    .icon-youtube{
+        background: #e83028;
+    }
+    .icon:first-child{
+        border-radius: 1rem 0 0 0;
+    }
+    .icon:last-child{
+        border-radius: 0 1rem 0 0;
+    }
+    .icon:hover{
+        padding: 2rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+}
+@media (min-width:900px) {
+    .social-bar{
+        position: fixed;
+        right: 0;
+        top:35%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 100;
+    }
+    .icon {
+        color: white;
+        text-decoration: none;
+        padding: .7rem;
+        display: flex;
+        transition: all .5s;
+    }
+    .icon-facebook{
+        background: #2e406e;
+    }
+    .icon-instagram{
+        background: #d84910;
+    }
+    .icon-whatsapp{
+        background: green;
+    }
+    .icon-twitter{
+        background: #339dc5;
+    }
+    .icon-youtube{
+        background: #e83028;
+    }
+    .icon:first-child{
+        border-radius: 1rem 0 0 0;
+    }
+    .icon:last-child{
+        border-radius: 0 0 0 1rem;
+    }
+    .icon:hover{
+        padding: 2rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+
+/* pagina WORK */
+
+.seccion-texto{
+    margin-top: 12rem;
+    margin-left: 9rem;
+    margin-bottom: 25rem;
+}
+.texto-work{
+    color: #ffffff;
+    font-size: 6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.img-trabajo-uno{
+    width: 750px;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+.trabajo-uno{
+    display: flex;
+}
+.texto-imagen-uno{
+    margin-top: 3rem;
+    padding : 5rem;
+}
+.titulo-texto{
+    font-size: 5rem;
+}
+.parrafo-texto{
+    font-size: 2rem;
+}
+.trabajo-dos{
+    display: flex;
+    margin-top: 20rem;
+}
+.texto-imagen-dos{
+    margin-top: 3rem;
+    padding : 5rem;
+}
+.barra-marron{
+    background-color: #70500f;
+    width: 900px;
+    height: 3px;
+    margin-left: 15rem;
+    margin-top: 20rem;
+}
+.img-trabajo-dos{
+    width: 750px;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+.color-work{
+    color: #584111;
+}
+
+/* pagina Skils */
+.body-skils {
+    background-color: white;
+}
+
+.nombre-h3-skils {
+    color: black;
+    padding: .5rem;
+}  
+.navbar-enlaces-skils li{
+    color: black;
+    padding: 15px;
+}
+.icono-nombre-skils{
+    display: flex;
+    align-items: center;
+}
+.navbar-enlaces-skils{
+    display: flex;
+}
+.navbar-skils{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icono-skils {
+    border: 2px solid #584111;
+}
+.color-skils{
+    background-color:#584111 ;
+    border-radius: 2rem;
+}
+.texto-principal-skils{
+    color: rgb(29, 29, 29);
+    font-size: 5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 13rem;
+    margin-left: 30rem;
+}
+.imagenes-skils{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-left: 50px;
+    padding: 50px;
+    margin-top: 100px;
+}
+.color-navbar {
+    color: black;
+}
+.distancia-imagenes{
+    padding: 25px;
+}
+.python:hover{
+    border: green 2px solid;
+    box-shadow: 12px 4px 30px 2px #032c09;
+}
+.css:hover {
+    border: blue 2px solid;
+    box-shadow: 12px 4px 30px 2px #09032c;
+}
+.html:hover {
+    border: orange 2px solid;
+    box-shadow: 12px 4px 30px 2px #7e4b08;
+}
+.js:hover {
+    border: yellow 2px solid;
+    box-shadow: 12px 4px 30px 2px #727008;
+}
+/* pagina about */
+.texto-about{
+    padding-top: 15rem;
+    padding-left: 5rem;
+}
+.barra-marron-about{
+    background-color: #70500f;
+    width: 900px;
+    height: 3px;
+    margin-left: 15rem;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+.imagen-leandro{
+    width: 750px;
+    padding: 1rem;
+    margin-left: 3rem;
+
+}
+.titulo-imagen{
+    font-size: 3rem;
+}

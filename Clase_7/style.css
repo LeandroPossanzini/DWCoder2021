@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+li {
+    list-style: none;
+}
+a {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: rgba(46, 64, 116, 0.904);
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+}   
+
+
+.link {
+    margin-right: 1.2rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.link:hover {
+    background-color: white;
+}
+.link:hover a {
+    color: rgba(90, 129, 238, 0.904);
+}
+.lista-enlaces {
+    display: flex;
+}
+.galeria {
+    background-color: cadetblue;
+    
+    padding: 5% 10%;
+    height: 800px;
+    /* al poner display grid, me genera automaticamente 5 filas y 5 columnas xq tengo
+    5 imagenes. */
+    display: grid;
+    /* esta propiedad sirve para poner de que tamaño quiere tener cada columna.
+    los valores que yo le pase seran el tamaño de cada imagen */
+    grid-template-columns: 1fr 1fr 1fr;
+    /*  si le pongo auto, el diseño se hace mas responsive
+    tambien le puedo poner fracciones para que sea mas reponsive 1fr */
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.img-item {
+    border: coral 2px solid;
+}
+/* esta selector nth me seleccion el primer elemento de la clase img-item */
+.img-item:nth-of-type(2) {
+    /* esta propiedad se aplica a los hijos. lo que me dice es que la imagen (1) 
+    se mueva desde el principio de la columna 1 hasta el principio de la columna 2 */
+    /* grid-column: 1 / 2; */
+    grid-column: 3 / 4;
+}

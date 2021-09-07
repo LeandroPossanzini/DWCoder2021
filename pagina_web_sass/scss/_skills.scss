@@ -1,0 +1,42 @@
+body {
+
+    .textoWork {
+        color: white;
+        font-size: 8rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 8rem;
+        margin-top: 11rem;
+        margin-bottom: 15rem;
+    }
+    .barraDivisioria{
+        background-color: $colorSecundario;
+        width: 900px;
+        height: 3px;
+        margin-left: 15rem;
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+    }
+    .imagenes__skill {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 5rem;
+    }
+    .imagenes__skill--python:hover{
+        border: green 2px solid;
+        box-shadow: 12px 4px 30px 2px #88ff9a;
+    }
+    .imagenes__skill--css:hover{
+        border:  blue 2px solid;
+        box-shadow: 12px 4px 30px 2px #a899fc;  
+    }
+    .imagenes__skill--html:hover{
+        border: orange 2px solid;
+        box-shadow: 12px 4px 30px 2px #7e4b08;
+    }
+    .imagenes__skill--js:hover{
+        border: yellow 2px solid;
+        box-shadow: 12px 4px 30px 2px #72712c;
+    }
+   
+}

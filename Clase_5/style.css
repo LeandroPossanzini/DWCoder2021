@@ -1,0 +1,42 @@
+/* declaracion universal */
+* {
+    margin: 0;
+    padding: 0;
+} 
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+header {
+    background-color: rgb(250, 158, 93);
+    padding: 5rem;
+}
+/* ancho de un texto, o de una caja */
+.main-texto {
+    width: 50rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+.banner-index {
+    background-color: crimson;
+    width: 100%;
+    /* width: 500px; */
+}
+/* romper cajas, overflow */
+.visible {
+    font-size: 24px;
+    background-color: darkcyan;
+    width: 80px;
+    height: 110px;
+    border: solid 5px;
+
+    /* overflow: scroll; */
+    /* overflow: hidden; */
+}
+/* enlaces */
+.navbar li{
+    display: inline-block;
+    background-color: chocolate;
+}

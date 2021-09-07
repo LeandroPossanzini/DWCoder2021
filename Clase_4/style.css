@@ -1,0 +1,35 @@
+/* reseteo del css */
+ * {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+} 
+header {
+    background-color: rgb(138, 84, 65);
+}
+
+/* estilos de texto italic, oblique, normal etc etc */
+h1 {
+    font-style: italic;
+}
+/* estilos de negritas font weigth ancho de la letra */
+h1 {
+    font-weight: 900;
+}
+/* Tamaño de la fuente font size */
+h1 {
+    font-size: 40px;
+}
+/* font family tipos de estilos de letras */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* alineado de texto */
+h1 {
+    text-align: center;
+}
+/* para sacar el stylos a las li */
+li {
+    list-style: none;
+}

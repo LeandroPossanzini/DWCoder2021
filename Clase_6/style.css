@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: white;
+    
+}
+
+li {
+    list-style: none;
+}
+a {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link {
+    margin-right: 1.2rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.link:hover {
+    background-color: white;
+}
+.link:hover a {
+    color: rgba(90, 129, 238, 0.904);
+}
+
+
+/* img {
+    width: 10rem;
+} */
+
+.galeria {
+    background-color: cadetblue;
+
+    /* los elementos se ordenan uno al lado del otro */
+    display: flex;
+    
+    /* despues tengo que elegir si los quiero en columna o en fila */
+
+    /* flex-direction: row; */
+    /* direccion row es la por defecto. */
+
+    /* flex-direction: column; */
+    /* me los ordena en columna no importa que elemento sea */
+
+    /* flex-direction: row-reverse; */
+    /* me los ordena en fila en sentido inverso. De la misma manera esta column-reverse */
+    flex-direction: row;
+
+    /* el flex-wrap lo que me permite hacer es que si los elementos son mas grandes que mi pagina
+    de inicio me los acomode abajo, generando una nueva fila. */
+    flex-wrap: wrap;
+
+    /* fle-flow es una convinacion entre las dos anteriores.
+    flex-flow: row wrap; ----->  quedaria*/
+
+    /* justify-content tiene varias formas por defecto me lo acomoda al principio (flex-start)
+    justify center me los acomoda al medio, todos juntos sin separalos.
+    justify space beetween el espacio disponible me los acomoda entre los elementos
+    justify space evenly el espacio disponible me los acomoda entre los elementos el principio y final
+    justify space  around intermedio entre el evenly y el beetween*/
+    justify-content: space-around;
+
+    /* Todo las propiedades que vimos hasta ahora esta visto desde el plano de X, ahora con aling items 
+    vamos a ver como podemos cambiar desde el plano Y */
+    height: 500px;
+    /* esta propiedad me estira las imagenes para que me queden todas iguales */
+    /* align-items: stretch; */
+    /* esta propiedad me los centra en el eje Y */
+    /* align-items: center; */
+    /*  con la propiedad aling items base line, puedo poner como linea de base una imagen y todas 
+    se alinieran en la base con esta */
+
+    /*  con aling content puedo generar otras cosas que no podria con items */
+    align-content: center; 
+    /*  con el space beetween se me vana  alinear uno bien arriba y otro bien abajo */
+    
+
+}
+
+
+/* pongo el display flex a "lista-enlaces porque es la que tiene hijos, si
+se lo pusiera al navbar solo tiene un ul de hijo no tendria efecto */
+.lista-enlaces {
+    display: flex;
+    /* independiemente del justify que yo le quiera dar a la lista de enlaces
+    no me va a producir ningun cambio, ya que el padre "header" tiene aplicado
+    un justify y esto hace que no tenga espacio para que mis li se puedan mover. */
+    /* si quiera que se separaran mas deberia darle un width del 70% al navbar ( esto
+    quiere decir que del contenedor padre yo voy a separar si o si el 70% para mi ul) */
+
+}
+
+header {
+    background-color: rgba(46, 64, 116, 0.904);
+    /* le pongo el display flex, ya que el header tiene dos hijos el "h1 logo" y el "nav" */
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    align-items: center;
+}
+
+.orden {
+    /* PROPIEDADES PARA LOS HIJOS */
+    /* todos los elementos empiezan con el order 0 y se van acomodando segun el html.
+    ahora si yo le pongo -1 a cualquier imagen me la acomoda al principio.
+    si yo a la imagen 2 le pongo order 1, me la va a acomodar al final de todo */
+    order: -1;
+}
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Contacto</h1>
+    <hr>
+
+
+     <!-- Formulario
+    Action = se le pega la url a donde se procesara el archivo
+    method = get/post = son las dos formas de comunicarme con el backend
+    required= si el campo no se relleno me tira error-->
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Datos personales </legend>
+            <label>nombre</label>
+            <input type="text" placeholder="Tu nombre..." required>
+            <br>
+            <br>
+            <label>telefono</label>
+            <input type="number">
+            <br>
+            <br>
+            <label>email</label>
+            <input type="email">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset">
+            <br>
+            <br>
+        </fieldset>
+        
+        <!-- Si tiene el mismo name solo se puede elegir uno -->
+        <label>50</label>
+        <input type="radio" name="internet" value="50">
+        <label>100</label>
+        <input type="radio" name="internet" value="100"> 
+        <label>150</label>
+        <input type="radio" name="internet" value="150">
+        <br>
+        <br>
+
+        <label>acepta terminos y condiciones</label>
+        <input type="checkbox" value="1">
+        <br>
+        <br>
+        <label for="opciones">Opciones</label>
+        <select name="opciones" id="opciones">
+            <option value="0">Opcion 1</option>
+            <option value="1">Opcion 2</option>
+            <option value="2">Opcion 3</option>
+            <option value="3">Opcion 4</option>
+        </select>
+    </form>
+</body>
+</html>

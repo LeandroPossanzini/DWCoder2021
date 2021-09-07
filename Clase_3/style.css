@@ -1,0 +1,12 @@
+/* tag */
+h1 {
+    color: red;
+}
+/* class una etiqueta puede tener muchas clases*/
+.rojo {
+    color: salmon;
+}
+/* id el id es unico por cada etiqueta*/
+#spotify {
+    color: rgb(97, 41, 35);
+}
